@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from "react";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import * as THREE from "three";
+import threesixty from "./360.jpg";
+import "./style.css";
 
-function App() {
+function Box(props) {
+  const mesh = useRef();
+  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01));
+  const base = new THREE.TextureLoader().load(threesixty);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <mesh {...props} ref={mesh}>
+      <boxGeometry args={[3, 3, 3]} />
+      <meshBasicMaterial attach="material" map={base} />
+    </mesh>
   );
 }
-
-export default App;
+export default function App() {
+  return (
+    <Canvas>
+      <ambientLight />
+      <Box />
+    </Canvas>
+  );
+}
