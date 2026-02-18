@@ -1,1 +1,125 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/headsgone/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="HEADSGONE - 360 EP"/><link rel="apple-touch-icon" href="/headsgone/logo192.png"/><link rel="manifest" href="/headsgone/manifest.json"/><title>HEADSGONE - 360 EP</title><link href="/headsgone/static/css/main.a3131393.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,a,i=r[0],c=r[1],l=r[2],f=0,p=[];f<i.length;f++)a=i[f],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&p.push(o[a][0]),o[a]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(s&&s(r);p.length;)p.shift()();return u.push.apply(u,l||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var c=t[i];0!==o[c]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise((function(r,n){t=o[e]=[r,n]}));r.push(t[2]=n);var u,i=document.createElement("script");i.charset="utf-8",i.timeout=120,a.nc&&i.setAttribute("nonce",a.nc),i.src=function(e){return a.p+"static/js/"+({}[e]||e)+"."+{3:"54111161"}[e]+".chunk.js"}(e);var c=new Error;u=function(r){i.onerror=i.onload=null,clearTimeout(l);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,t[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:i})}),12e4);i.onerror=i.onload=u,document.head.appendChild(i)}return Promise.all(r)},a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/headsgone/",a.oe=function(e){throw console.error(e),e};var i=this.webpackJsonpheadsgone=this.webpackJsonpheadsgone||[],c=i.push.bind(i);i.push=r,i=i.slice();for(var l=0;l<i.length;l++)r(i[l]);var s=c;t()}([])</script><script src="/headsgone/static/js/2.5324cdb7.chunk.js"></script><script src="/headsgone/static/js/main.860276de.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEADSGONE — Cork, Ireland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ── NOISE OVERLAY ── -->
+  <canvas id="noise-canvas"></canvas>
+
+  <!-- ── WEBGL CANVAS ── -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- ── SINGLE PAGE LAYOUT ── -->
+  <main id="main">
+
+    <!-- LEFT: Identity -->
+    <div class="identity">
+      <div class="identity-tag">
+        <span class="dot"></span>
+        <span>CORK, IRELAND</span>
+      </div>
+      <h1 class="identity-title">
+        <span class="title-word">HEADS</span><span class="title-word accent">GONE</span>
+      </h1>
+      <p class="identity-sub">Electronic producer.</p>
+    </div>
+
+    <!-- RIGHT: Links stack -->
+    <div class="links-panel">
+
+      <div class="links-label">SOCIALS & MUSIC</div>
+
+      <div class="links-stack">
+
+        <a href="https://www.instagram.com/headsgonee" target="_blank" class="link-row" data-index="0">
+          <div class="link-left">
+            <span class="link-platform">INSTAGRAM</span>
+            <span class="link-detail">@HEADSGONEE</span>
+          </div>
+          <div class="link-right">
+            <span class="link-action">FOLLOW</span>
+            <svg class="link-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+        </a>
+
+        <a href="https://soundcloud.com/headsgone" target="_blank" class="link-row" data-index="1">
+          <div class="link-left">
+            <span class="link-platform">SOUNDCLOUD</span>
+            <span class="link-detail">@HEADSGONE</span>
+          </div>
+          <div class="link-right">
+            <span class="link-action">LISTEN</span>
+            <svg class="link-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+        </a>
+
+        <a href="https://open.spotify.com/artist/headsgone" target="_blank" class="link-row" data-index="2">
+          <div class="link-left">
+            <span class="link-platform">SPOTIFY</span>
+            <span class="link-detail">HEADSGONE</span>
+          </div>
+          <div class="link-right">
+            <span class="link-action">STREAM</span>
+            <svg class="link-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+        </a>
+
+        <a href="https://headsgone.bandcamp.com" target="_blank" class="link-row" data-index="3">
+          <div class="link-left">
+            <span class="link-platform">BANDCAMP</span>
+            <span class="link-detail">BUY · DOWNLOAD</span>
+          </div>
+          <div class="link-right">
+            <span class="link-action">OPEN</span>
+            <svg class="link-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="links-divider"></div>
+
+      <div class="links-label">LATEST</div>
+
+      <a href="https://soundcloud.com/headsgone" target="_blank" class="release-feature" data-index="3">
+        <div class="release-feature-left">
+          <span class="release-feature-tag">SINGLE · 2024</span>
+          <span class="release-feature-name">WIMME</span>
+          <span class="release-feature-tracks">SOUNDCLOUD</span>
+        </div>
+        <div class="release-feature-right">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10H17M17 10L11 4M17 10L11 16" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+      </a>
+
+      <div class="links-footer">
+        <span class="footer-copy">© 2024 HEADSGONE</span>
+        <span class="footer-location">Cork, IE</span>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ── TRANSITION VEIL ── -->
+  <div id="page-veil"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
